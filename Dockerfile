@@ -14,7 +14,8 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
-EXPOSE 8080 #expose the api to port 8080 --> env vars
+EXPOSE 8080 
+#expose the api to port 8080 --> env vars
 
 
 CMD [ "node", "server.js" ]
